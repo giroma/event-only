@@ -4,4 +4,6 @@
 </p>
 <% @locations.each do |current_location| %>
 <%= render 'location' , location: current_location%>
+<%= render 'form' , location: current_location%>
+
 <% end %>
