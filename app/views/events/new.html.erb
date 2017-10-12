@@ -1,1 +1,14 @@
-events#new page
+<h1>Make event</h1>
+
+<%= form_for @event do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+
+  <%= f.submit %>
+
+<% end %>

@@ -1,1 +1,4 @@
-events#index page
+<% @events.each do |event| %>
+  <%= event.name %> <%= event.date %>     <%= event.city%>
+  <br>
+<% end %>

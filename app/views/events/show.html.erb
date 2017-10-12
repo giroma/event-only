@@ -1,1 +1,3 @@
-events#show page
+
+  <%= @event.name %> <%= @event.date %>
+<%= link_to "delete", event_path, method: :delete, data: {confirm: "you sure bro?"} %>
